@@ -1,0 +1,41 @@
+/*
+ * Your custom CSS goes here but before adding a lot of CSS check this out:
+ *   https://tailwindcss.com/docs/extracting-components
+*/
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "tailwindcss-rails";
+
+/* オーバーライド */
+.bg-indigo-500 {
+    background-color: rgb(99 102 241);
+}
+.bg-indigo-600 {
+    background-color: rgb(79 70 229);
+}
+.bg-gray-800{
+    background-color: rgb(31 41 55);
+}
+.bg-gray-100{
+    background-color: rgb(243 244 246);
+}
+.bg-red-100{
+    background-color: rgb(254 226 226);
+}
+.bg-blue-100{
+    background-color: rgb(219 234 254);
+}
+.bg-green-700{
+    background-color: rgb(21 128 61);
+}
+.bg-green-800{
+    background-color: rgb(22 101 52);
+}
+.bg-gray-50{
+    background-color: rgb(249 250 251);
+}
+.bg-red-500{
+    background-color: rgb(246, 13, 13);
+}
