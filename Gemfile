@@ -80,4 +80,4 @@ end
   gem "devise"
   gem "stripe"
 
-  gem "tailwindcss-rails", "~> 2.7"
+  # gem "tailwindcss-rails", "~> 2.7"
