@@ -4,6 +4,7 @@ set -o errexit
 
 
 bundle install
+rails assets:precompile
 bundle exec rake assets:precompile
 bundle exec rake assets:precompile RAILS_ENV=production
 bundle exec rake assets:clean
