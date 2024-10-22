@@ -6,7 +6,8 @@ WORKDIR /app
 ARG UID=1000
 ARG GID=1000
 
-RUN apt-get update -qq && apt-get install -y graphviz
+RUN apt-get update && apt-get install -y yarn
+
 RUN bash -c "set -o pipefail && apt-get update \
   && apt-get install -y --no-install-recommends build-essential curl git libpq-dev\
   && curl -sSL https://deb.nodesource.com/setup_18.x | bash - \
@@ -52,7 +53,7 @@ ARG UID=1000
 ARG GID=1000
 
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends build-essential curl libpq-dev vim \
+  && apt-get install -y --no-install-recommends build-essential curl libpq-dev\
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
   && groupadd -g "${GID}" ruby \
@@ -78,3 +79,4 @@ ENTRYPOINT ["/app/bin/docker-entrypoint-web"]
 EXPOSE 8000
 
 CMD ["rails", "s"]
+
