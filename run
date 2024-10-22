@@ -121,10 +121,6 @@ function yarn:build:css {
   elif [ "${RAILS_ENV:-}" == "development" ]; then
     args=(--watch)
   fi
-
-  # tailwindcss --postcss \
-  #   -i ./app/assets/stylesheets/application.tailwind.css \
-  #   -o ./app/assets/builds/application.css "${args[@]}"
 }
 
 function clean {
