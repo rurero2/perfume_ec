@@ -1,3 +1,6 @@
+# Docker setting is copied from [docker-rails example](https://github.com/FarStep131/docker-rails-example)
+Thanks to nickjj & FarStep131!!
+
 # An example Rails + Docker app
 
 ![CI](https://github.com/nickjj/docker-rails-example/workflows/CI/badge.svg?branch=main)
