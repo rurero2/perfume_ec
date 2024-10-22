@@ -6,59 +6,77 @@ Customer.create!(name: "Hoshino Yui", email: "hoshino.yui@gmail.com", password: 
 Customer.create!(name: "Saito Kazuma", email: "saito.kazuma@gmail.com", password: "111111")
 
 p '==================== admin create ===================='
-Admin.create!(email: "admin@gmail.com", password: "1234qwer")
+Admin.create!(email: "admin@gmail.com", password: "111111")
 
 p '==================== product create ===================='
 product1 = Product.new(
-  name: "Wool Comfort Hat",
-  description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.", 
-  price: 4200, 
-  stock: 30
+  name: "わかくさだんご",
+  description: "奈良の四季をイメージした色の団子6個セットです。", 
+  price: 400, 
+  stock: 300
 )
-product1.image.attach(io: File.open(Rails.root.join('app/assets/images/hat.jpg')), filename: 'hat.jpg')
+product1.image.attach(io: File.open(Rails.root.join('app/assets/images/a1.jfif')), filename: 'a1.jfif')
 product1.save!
 
 product2 = Product.new(
-  name: "Blue Jacket",
-  description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.", 
-  price: 24800, 
-  stock: 21
+  name: "鹿見だんご",
+  description: "奈良の鹿をイメージした色の団子6個セットです。", 
+  price: 500, 
+  stock: 410
 )
-product2.image.attach(io: File.open(Rails.root.join('app/assets/images/jacket.jpg')), filename: 'jacket.jpg')
+product2.image.attach(io: File.open(Rails.root.join('app/assets/images/a2.jfif')), filename: 'a2.jfif')
 product2.save!
 
 product3 = Product.new(
-  name: "Square Pants",
-  description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.", 
-  price: 5780, 
-  stock: 10
+  name: "つぼみもち",
+  description: "つぼみが花開く様子をイメージしたお餅3つセットです。", 
+  price: 580, 
+  stock: 130
 )
-product3.image.attach(io: File.open(Rails.root.join('app/assets/images/pants.jpg')), filename: 'pants.jpg')
+product3.image.attach(io: File.open(Rails.root.join('app/assets/images/a3.jfif')), filename: 'a3.jfif')
 product3.save!
 
 product4 = Product.new(
-  name: "T-shirt",
-  description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.", 
-  price: 3900, 
-  stock: 12
+  name: "鹿色もち",
+  description: "奈良の鹿をイメージしたお餅です", 
+  price: 200, 
+  stock: 120
 )
-product4.image.attach(io: File.open(Rails.root.join('app/assets/images/shirt.jpg')), filename: 'shirt.jpg')
+product4.image.attach(io: File.open(Rails.root.join('app/assets/images/a4.jfif')), filename: 'a4.jfif')
 product4.save!
 
 product5 = Product.new(
-  name: "Runner Shoes",
-  description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.", 
-  price: 8900, 
+  name: "吊り下げ縁起物",
+  description: "奈良の四季をイメージした吊り下げ飾りです", 
+  price: 800, 
   stock: 8
 )
-product5.image.attach(io: File.open(Rails.root.join('app/assets/images/shoes.jpg')), filename: 'shoes.jpg')
+product5.image.attach(io: File.open(Rails.root.join('app/assets/images/a5.jfif')), filename: 'a6.jfif')
 product5.save!
 
 product6 = Product.new(
-  name: "Black Skirt",
-  description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.", 
-  price: 3200, 
-  stock: 30
+  name: "ぬいぐるみ(小)",
+  description: "奈良公園の鹿のぬいぐるみです。", 
+  price: 1200, 
+  stock: 0
 )
-product6.image.attach(io: File.open(Rails.root.join('app/assets/images/skirt.jpg')), filename: 'skirt.jpg')
+product6.image.attach(io: File.open(Rails.root.join('app/assets/images/a8.jfif')), filename: 'a8.jfif')
+product6.save!
+
+product6 = Product.new(
+  name: "鹿クッキー",
+  description: "奈良公園の鹿のクッキーです。", 
+  price: 200, 
+  stock: 300
+)
+product6.image.attach(io: File.open(Rails.root.join('app/assets/images/a9.jfif')), filename: 'a9.jfif')
+product6.save!
+
+product6 = Product.new(
+  name: "特製鹿キャンディー",
+  description: "奈良公園の鹿のアメです。", 
+  price: 300, 
+  stock: 300
+)
+product6.image.attach(io: File.open(Rails.root.join('app/assets/images/a11.jfif')), filename: 'a11.jfif')
 product6.save!

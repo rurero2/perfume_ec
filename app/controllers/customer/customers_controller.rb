@@ -6,6 +6,6 @@ class Customer::CustomersController < ApplicationController
   def withdraw
     current_customer.update(status: 'withdrawn')
     reset_session
-    redirect_to root_path, notice: 'Successfully withdraw from Ecommerce'
+    redirect_to root_path, notice: '退会しました。またのご利用をお待ちしております。'
   end
 end

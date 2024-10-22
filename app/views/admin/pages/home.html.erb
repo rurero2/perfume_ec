@@ -6,7 +6,7 @@
           <div class="flex justify-center items-center">
             <div class="w-2/3 max-w-full px-3">
               <div>
-                <p class="mb-0 font-sans font-semibold leading-normal text-sm">Today's Sales</p>
+                <p class="mb-0 font-sans font-semibold leading-normal text-sm">今日の売上</p>
                 <p class="mb-0 font-bold text-xl">
                   <%= number_to_currency(@today_total_sales, unit: "¥", strip_insignificant_zeros: true) %>
                 </p>
@@ -29,7 +29,7 @@
           <div class="flex justify-center items-center">
             <div class="w-2/3 max-w-full px-3">
               <div>
-                <p class="mb-0 font-sans font-semibold leading-normal text-sm">Today's Orders</p>
+                <p class="mb-0 font-sans font-semibold leading-normal text-sm">今日の注文情報</p>
                 <p class="mb-0 font-bold text-xl">
                   <%= @today_total_orders %>
                 </p>

@@ -21,6 +21,7 @@ ENV.fetch('WEB_CONCURRENCY') { Etc.nprocessors * 2 }
 # terminating a worker in development environments.
 worker_timeout 3600 if ENV.fetch('RAILS_ENV', 'development') == 'development'
 
+workers ENV.fetch("WEB_CONCURRENCY") { 4 }
 # Use the `preload_app!` method when specifying a `workers` number.
 # This directive tells Puma to first boot the application and load code
 # before forking the application. This takes advantage of Copy On Write
