@@ -122,9 +122,9 @@ function yarn:build:css {
     args=(--watch)
   fi
 
-  tailwindcss --postcss \
-    -i ./app/assets/stylesheets/application.tailwind.css \
-    -o ./app/assets/builds/application.css "${args[@]}"
+  # tailwindcss --postcss \
+  #   -i ./app/assets/stylesheets/application.tailwind.css \
+  #   -o ./app/assets/builds/application.css "${args[@]}"
 }
 
 function clean {
