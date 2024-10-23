@@ -6,7 +6,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "tailwindcss-rails";
+/* @import "tailwindcss-rails"; */
 
 /* オーバーライド */
 .bg-indigo-500 {
